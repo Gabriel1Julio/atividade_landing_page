@@ -1,0 +1,50 @@
+.events {
+    color: #fff;
+    padding: 80px 0;
+
+    &--pula-pula {
+        background-image: linear-gradient(#1E90FF, #930050);
+    }
+
+    &--pipoca {
+        background-image: linear-gradient(#930050, #1E90FF);
+    }
+
+    &--dj {
+        background-image: linear-gradient(#1E90FF, #b34db2);
+    }
+    
+    &--algodao {
+        background-image: linear-gradient(#b34db2, #ec5353);
+    }
+
+    &__block {
+        display: flex;
+        gap: 40px;
+
+        &--image-left {
+            flex-direction: row-reverse;
+        }
+
+        &__text {
+            b {
+                font-size: 24px;
+            }
+        }
+
+        &__img {
+            width: 400px;
+        }
+    }
+    
+    @media (max-width: 640px) {
+        &__block {
+            display: block;
+
+            &__img {
+                margin-top: 16px;
+                width: 100%;
+            }
+        }
+    }
+}
